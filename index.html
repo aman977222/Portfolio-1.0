@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PortfolioForge - Modern & Premium Portfolio</title>
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Welcome to my modern, premium, and responsive portfolio website showcasing my software engineering projects, skills, and journey.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header class="navbar-header">
+    <div class="nav-container">
+      <a href="#home" class="logo" id="nav-logo">
+        Portfolio<span class="highlight">Forge</span>
+      </a>
+      
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu-desktop">
+        <a href="#home" class="nav-link active" data-section="home">Home</a>
+        <a href="#about" class="nav-link" data-section="about">About</a>
+        <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+        <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+        <a href="#journey" class="nav-link" data-section="journey">Journey</a>
+        <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+        <a href="cv_aman.pdf" download="Aman_Kumar_Jangid_CV.pdf" class="btn btn-outline nav-cv-btn" style="padding: 6px 16px; font-size: 0.9rem; border-radius: 4px; border-color: rgba(255, 42, 64, 0.4); margin-left: 10px;">Download CV</a>
+      </nav>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+    
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav" id="mobile-nav-menu">
+      <a href="#home" class="mobile-link active" data-section="home">Home</a>
+      <a href="#about" class="mobile-link" data-section="about">About</a>
+      <a href="#skills" class="mobile-link" data-section="skills">Skills</a>
+      <a href="#projects" class="mobile-link" data-section="projects">Projects</a>
+      <a href="#journey" class="mobile-link" data-section="journey">Journey</a>
+      <a href="#contact" class="mobile-link" data-section="contact">Contact</a>
+      <a href="cv_aman.pdf" download="Aman_Kumar_Jangid_CV.pdf" class="btn btn-outline" style="margin-top: 15px;">Download CV</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="section hero">
+    <div class="section-container hero-grid">
+      <!-- Hero Left: Info -->
+      <div class="hero-info">
+        <span class="subtitle-tag">HELLO, I'M</span>
+        <h1 class="hero-name" id="hero-name">Your Name</h1>
+        <h2 class="hero-role-container">
+          <span class="hero-role" id="hero-role"></span><span class="cursor">|</span>
+        </h2>
+        <p class="hero-desc" id="hero-description">
+          I build modern, high-performance web applications with clean code and bold design. Explore my work below.
+        </p>
+        
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View Projects &rarr;</a>
+          <a href="cv_aman.pdf" download="Aman_Kumar_Jangid_CV.pdf" class="btn btn-outline">Download CV</a>
+        </div>
+        
+        <!-- Social Links -->
+        <div class="social-links" id="hero-socials">
+          <!-- Dynamically populated via JS -->
+        </div>
+      </div>
+      
+      <!-- Hero Right: Visuals -->
+      <div class="hero-visual">
+        <div class="circle-avatar-container">
+          <div class="circle-glow-bg"></div>
+          <div class="main-avatar-circle">
+            <span class="avatar-letter" id="avatar-letter">Y</span>
+          </div>
+          <!-- Floating Skill Badges -->
+          <div class="floating-badge badge-top-left" id="badge-python">
+            <!-- Dynamic SVG -->
+          </div>
+          <div class="floating-badge badge-middle-right" id="badge-html">
+            <!-- Dynamic SVG -->
+          </div>
+          <div class="floating-badge badge-bottom-right" id="badge-js">
+            <!-- Dynamic SVG -->
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Scroll Down Indicator -->
+    <a href="#about" class="scroll-indicator">
+      <span class="scroll-text">Scroll</span>
+      <span class="scroll-arrow"></span>
+    </a>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="section about">
+    <div class="section-container">
+      <h2 class="section-heading">About <span class="highlight">Me</span></h2>
+      <div class="about-grid">
+        <!-- About Left: Text -->
+        <div class="about-text" id="about-paragraphs">
+          <!-- Dynamically populated -->
+        </div>
+        
+        <!-- About Right: Stats Grid -->
+        <div class="about-stats-grid" id="about-stats">
+          <!-- Dynamically populated -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section skills">
+    <div class="section-container">
+      <h2 class="section-heading">My <span class="highlight">Skills</span></h2>
+      <div class="skills-grid" id="skills-container">
+        <!-- Dynamically populated -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section projects">
+    <div class="section-container">
+      <h2 class="section-heading">My <span class="highlight">Projects</span></h2>
+      <div class="projects-grid" id="projects-container">
+        <!-- Dynamically populated -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Journey Section -->
+  <section id="journey" class="section journey">
+    <div class="section-container">
+      <h2 class="section-heading">My <span class="highlight">Journey</span></h2>
+      <div class="timeline" id="journey-container">
+        <!-- Dynamically populated -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact">
+    <div class="section-container">
+      <h2 class="section-heading">Get In <span class="highlight">Touch</span></h2>
+      <div class="contact-grid">
+        <!-- Contact Left: Details -->
+        <div class="contact-info">
+          <p class="contact-desc">
+            Have a project in mind or just want to say hi? My inbox is always open.
+          </p>
+          <div class="contact-list" id="contact-list-container">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+        
+        <!-- Contact Right: Form -->
+        <div class="contact-form-container">
+          <form class="contact-form" id="portfolio-contact-form">
+            <div class="form-group">
+              <input type="text" id="contact-name" class="form-input" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" id="contact-email" class="form-input" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <input type="tel" id="contact-phone" class="form-input" placeholder="Your Contact Number" required>
+            </div>
+            <div class="form-group">
+              <input type="text" id="contact-subject" class="form-input" placeholder="Subject of your message" required>
+            </div>
+            <div class="form-group">
+              <textarea id="contact-message" class="form-input form-textarea" placeholder="Write your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-submit">
+              Send Message 
+              <svg class="send-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="section-container footer-content">
+      <p class="copyright">&copy; <span id="footer-year">2026</span> <span id="footer-name">Your Name</span>. All Rights Reserved.</p>
+      <p class="crafted-by">Crafted with &hearts; and Neon Glow</p>
+    </div>
+  </footer>
+
+  <!-- Message Success Popup Modal -->
+  <div class="modal-overlay" id="success-modal">
+    <div class="modal-card">
+      <div class="modal-icon-container">
+        <svg class="modal-check-icon" viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+      </div>
+      <h3 class="modal-title">Message Sent!</h3>
+      <p class="modal-text">Thanks for reaching out. I'll get back to you soon.</p>
+      <button class="btn btn-primary" id="modal-close-btn">Close</button>
+    </div>
+  </div>
+
+  <!-- JavaScript Scripts -->
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
